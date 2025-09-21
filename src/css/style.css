@@ -95,10 +95,87 @@ img {
   max-width: 100%;
 }
 
+.disclaimer {
+  font-size: 20px;
+  background-color: white;
+}
+
 body {
-  font-family: var(--bs-body-font-family);
-  font-size: 18px;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 30px;
   margin: 0;
+  background-color: var(--bs-black);
+}
+
+.global-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+
+#park-header a {
+  color: white;
+}
+
+/* Container for all icons */
+.icon-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 icons, equal width */
+  text-align: center;
+  margin-top: 20px;
+  padding-left: 120px;
+  padding-right: 120px;
+  padding-bottom: 20px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-item span {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: white;
+}
+
+.icon-item .icon {
+  width: 24px;
+  height: 24px;
+  fill: white;
+}
+
+.park-text {
+  position: absolute;       /* sit on top of image */
+  bottom: 110px;                /* align to bottom */
+  left: 0;                  /* stretch from left */
+  width: 100%;              /* full width of image */
+  background-color: rgba(0, 0, 0, 0.75); /* semi-transparent black */
+  color: white;
+  padding: 10px 20px;       /* some spacing inside */
+  display: flex;            /* optional: align children */
+  align-items: center;
+}
+
+.park-title,
+.park-title:link,
+.park-title:visited {
+  font-size: 34px;
+  color: white;
+  display: flex;
+  text-decoration: none;
+  padding-left: 20px;
+}
+
+.park-subtitle {
+  font-size: 14px;
+  color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
 
 a:link,
@@ -136,10 +213,12 @@ a:hover {
 .site-title {
   display: flex;
   align-items: center;
+  text-decoration: none;
 }
 .site-title > span {
-  font-size: 1rem;
+  font-size: 20px;
   margin-left: 0.3em;
+  color: white;
 }
 
 .logo {
@@ -165,9 +244,22 @@ a:hover {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+  color: white;
 }
 
 svg {
   background-color: var(--bs-black);
   fill: white;
+  width: 24px;
+  height: 24px;
+}
+
+#global-nav-toggle {
+  background: none;      /* remove background color */
+  border: none;          /* remove border */           
+  font: inherit;
+  cursor: pointer;
+  outline: none; 
+  color: white;
+  font-size: 24px;
 }
