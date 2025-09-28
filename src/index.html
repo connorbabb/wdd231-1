@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
     <link rel="stylesheet" href="css/style.css" />
-    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/main.js" defer></script>
   </head>
   <body>
     <p class="disclaimer">
@@ -65,7 +65,7 @@
       <section class="hero-image">
         <img src="images/3C7D5920-1DD8-B71B-0B83F012ED802CEA.jpg" alt="hero-image">
       </section>
-      <section id="park-header">
+      <div class="park-container">
         <div class="park-text">
           <a href="#" class="park-title">Yellowstone</a>
           <p class="park-subtitle">
@@ -77,37 +77,48 @@
           <div class="icon-item">
             <span>Info</span>
             <svg class="icon" role="presentation" focusable="false">
-              <use xlink:href="/images/sprite.symbol.svg#info"></use>
+              <use xlink:href="images/sprite.symbol.svg#info"></use>
             </svg>
           </div>
           <div class="icon-item">
             <span>Alerts</span>
             <svg class="icon" role="presentation" focusable="false">
-              <use xlink:href="/images/sprite.symbol.svg#alert"></use>
+              <use xlink:href="images/sprite.symbol.svg#alert"></use>
             </svg>
           </div>
           <div class="icon-item">
             <span>Maps</span>
             <svg class="icon" role="presentation" focusable="false">
-              <use xlink:href="/images/sprite.symbol.svg#location"></use>
+              <use xlink:href="images/sprite.symbol.svg#location"></use>
             </svg>
           </div>
           <div class="icon-item">
             <span>Calendar</span>
             <svg class="icon" role="presentation" focusable="false">
-              <use xlink:href="/images/sprite.symbol.svg#calendar"></use>
+              <use xlink:href="images/sprite.symbol.svg#calendar"></use>
             </svg>
           </div>
           <div class="icon-item">
             <span>Fees</span>
             <svg class="icon" role="presentation" focusable="false">
-              <use xlink:href="/images/sprite.symbol.svg#fee-22"></use>
+              <use xlink:href="images/sprite.symbol.svg#fee-22"></use>
             </svg>
           </div>
         </div>
-      </section>
+      </div>
     </header>
+    <div id="park-footer">
+      <h1>Yellowstone National Park</h1>
+      <p>On March 1, 1872, Yellowstone became the first national park for all to enjoy the unique hydrothermal wonders. Today, millions of people come here each year to camp, hike, and enjoy the majesty of the park.</p>
+    </div>
+    <section class="intro"></section>
+    <section class="info"></section>
     <main id="main"></main>
-    <footer id="park-footer"></footer>
+    <footer>
+      <div class="footer-container">
+        <img src="images/topo_pattern.png" class="footer-img" alt="Footer background">
+        <div class="contact"></div> <!-- your mailing/phone gets injected here -->
+      </div>
+    </footer>
   </body>
 </html>
