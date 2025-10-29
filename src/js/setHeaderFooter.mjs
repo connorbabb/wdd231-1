@@ -1,3 +1,4 @@
+
 import { parkInfoTemplate, footerTemplate } from "./templates.mjs";
 
 function setHeaderInfo(data) {
