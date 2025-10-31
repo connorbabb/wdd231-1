@@ -5,13 +5,14 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 export default defineConfig({
-  root: "src/",
+  root: "src", // your source folder
 
   build: {
-    outDir: "../dist",
+    outDir: "../dist", // output folder
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "src/index.html")
+        main: resolve(__dirname, "src/index.html"),
+        conditions: resolve(__dirname, "src/conditions.html")
       }
     }
   }
